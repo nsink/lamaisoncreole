@@ -1,0 +1,133 @@
+<h3 align='center' style='color:orange'>
+  <font face="cursive">
+    Activités, Détente, Visites
+  </font>
+</h3>
+<div class='row'>
+  <div class='span6'>
+    <p>
+      <h3 align='center'>C'est les vacances ?</h3>
+      Consultez a la reception le livre des visites et excursions à votre disposition<br>
+      Vous trouverez des brochures dans le présentoir.
+    </p>
+    <p>
+      <h4>Se promener, bronzer et se baigner :</h4>
+      <div style="margin:auto;max-width:600px">
+        <div id="myCarousel" class="carousel slide" >
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="3" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="4" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="5" class=""></li>
+          </ol>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item active" style="max-width:600px">
+              <!-- <div class="carousel-caption">
+                <h4>Le Gosier</h4>
+              </div> -->
+              <%= image_tag('images_diapo/ilet_gosier.jpg') %>
+            </div>
+            <div class="item" style="max-width:600px">
+              <%= image_tag('images_diapo/plage_1.jpg') %>
+              <!-- <div class="carousel-caption">
+                <h4>La plage est là, pour vous!</h4>
+              </div> -->
+            </div>
+            <div class="item" style="max-width:600px">
+              <%= image_tag('images_diapo/datcha.jpg') %>
+              <!-- <div class="carousel-caption">
+                <h4>La plage est là, pour vous!</h4>
+              </div> -->
+            </div>
+            <div class="item" style="max-width:600px">
+              <%= image_tag('images_diapo/soufriere.jpg') %>
+              <!-- <div class="carousel-caption">
+                <h4>La plage est là, pour vous!</h4>
+              </div> -->
+            </div>
+            <div class="item" style="max-width:600px">
+              <%= image_tag('images_diapo/bains_jaunes.jpg') %>
+              <!-- <div class="carousel-caption">
+                <h4>La plage est là, pour vous!</h4>
+              </div> -->
+            </div>
+            <div class="item" style="max-width:600px">
+              <%= image_tag('images_diapo/grande_anse.jpg') %>
+              <!-- <div class="carousel-caption">
+                <h4>La plage est là, pour vous!</h4>
+              </div> -->
+            </div>
+          </div>
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+        </div>
+      </div>
+    </p>
+    <p>
+      <div class='well'>
+        <h4>Activités gratuites au sein de l'hotel :</h4>
+        <ul>
+          <li>Aquagym dans la piscine de l’hôtel (Panneau « Informations »)</li>
+          <li>Carte accès plage "Base Antilles Jet" Transats à disposition</li>
+          <li>La Guadeloupe possède de nombreux chemins balisés appelés "TRACES"<br>Consultez à l'accueil le livre des traces.</li>
+        </ul>
+      </div>
+    </p>
+    <p>
+      <div class='well'>
+        <h4>Se déplacer en guadeloupe :</h4>
+        <ul>
+          <li>Navette plage « Pointe de la Verdure » (le matin - sur demande)</li>
+          <li>Location de voitures avec <a class='btn btn-mini' href="http://location-voiture-guadeloupe.jumbocar.com/location-voiture-guadeloupe/" target="_blank">Jumbo Car</a>, code promo: <b>mcreol</b></li>
+          <li>Location de voitures avec <a class='btn btn-mini' href="http://locationvoiture971.fr" target="_blank">Express Location</a>
+            <span class='float:right'><a href="http://locationvoiture971.fr" target="_blank"> <%= image_tag('express.png', :width => '20%') %></a></span>
+          </li>
+        </ul>
+      </div>
+    </p>
+    
+  </div>
+
+  <div class='span6'>
+    <h3 align='center'>10 jours de visites !</h3>
+    <ul class="nav nav-tabs" id="myTab" align='center'>
+      <li class="active"><a href="#j1" >1</a></li>
+      <li><a                href="#j2" >2</a></li>
+      <li><a                href="#j3" >3</a></li>
+      <li><a                href="#j4" >4</a></li>
+      <li><a                href="#j5" >5</a></li>
+      <li><a                href="#j6" >6</a></li>
+      <li><a                href="#j7" >7</a></li>
+      <li><a                href="#j8" >8</a></li>
+      <li><a                href="#j9" >9</a></li>
+      <li><a                href="#j10">10</a></li>
+    </ul>
+    <div style="height:auto;overflow:auto">
+      <div class='well' style='height:650px'>
+        <div class="tab-content">
+        <div class="tab-pane active" id="j1"><%= render 'visites/visite_1' %></div>
+        <div class="tab-pane" id="j2"><%= render 'visites/visite_2' %></div>
+        <div class="tab-pane" id="j3"><%= render 'visites/visite_3' %></div>
+        <div class="tab-pane" id="j4"><%= render 'visites/visite_4' %></div>
+        <div class="tab-pane" id="j5"><%= render 'visites/visite_5' %></div>
+        <div class="tab-pane" id="j6"><%= render 'visites/visite_6' %></div>
+        <div class="tab-pane" id="j7"><%= render 'visites/visite_7' %></div>
+        <div class="tab-pane" id="j8"><%= render 'visites/visite_8' %></div>
+        <div class="tab-pane" id="j9"><%= render 'visites/visite_9' %></div>
+        <div class="tab-pane" id="j10"><%= render 'visites/visite_10' %></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<br><br>
+
+<script type="text/javascript">
+  $('#myTab a').click(function (e) {
+    e.preventDefault();
+    $(this).tab('show');
+  })
+</script>

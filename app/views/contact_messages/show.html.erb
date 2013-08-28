@@ -1,0 +1,29 @@
+<p id="notice" align='center' style='font-size:300%; padding-top:50px'><%= notice %></p>
+
+<% if not @contact_message.nom.blank? %>
+  <p>
+    <b>Votre Nom:</b>
+    <%= @contact_message.nom %>
+  </p>
+<% end %>
+
+<% if not @contact_message.email.blank? %>
+  <p>
+    <b>Votre Email:</b> (une copie vous à été envoyé) <br>
+    <%= @contact_message.email %>
+  </p>
+<% end %>
+
+<% if not @contact_message.telephone.blank? %>
+  <p>
+    <b>Votre Telephone:</b>
+    <%= @contact_message.telephone %>
+  </p>
+<% end %>
+
+<% if not @contact_message.message.blank? %>
+  <p>
+    <b>Votre Message:</b>
+    <%= @contact_message.message %>
+  </p>
+<% end %>

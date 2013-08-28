@@ -1,0 +1,34 @@
+<%= simple_form_for(@contact_message, ) do |f| %>
+<!-- :html => {:class => 'form-horizontal' } -->
+
+<div class='row'>
+  <div class='span4'>
+    <h1>Nous contacter&nbsp;:</h1>
+  </div>
+  <div class='span8'>
+    <div class='well' style="text-align:justify; font-size:120%">
+      Pour nous contacter, vous pouvez nous appeller au <a href="tel:+590843643"><b>05 90 84 36 43</b></a> ou utiliser ce formulaire. Nous serons heureux de répondre à toute demande d'information complémentaire.
+      Vous recevrez une copie de ce message par mail.
+    </div>
+  </div>
+</div>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <div class="row">
+      <div class='span4'>
+        
+        <%= f.input :nom, label: 'Nom :', as: :string  %>
+        <%= f.input :email, label: 'Email :', as: :string  %>
+        <%= f.input :telephone, label: 'Téléphone :', as: :string %>
+      </div>
+      <div class='span8'>
+        <%= f.input :message, label: 'Votre message:',:input_html => { 'style' => "width:100%", "rows" => 10 } %>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-actions" align="center">
+    <%= f.button :submit, "Envoyer", class: "btn btn-success btn-large" %>
+  </div>
+<% end %>

@@ -1,0 +1,57 @@
+@import "bootstrap";
+body { padding-top: 70px;  padding-bottom: 70px; }
+.navbar .brand { padding: 20px 11px 24px; font-size:200%}
+.navbar .nav > li > a { padding: 20px 11px 24px; font-size:130%}
+
+//.navbar .nav pull-right {}
+
+//@media (min-width: 768px) and (max-width: 979px) { .plop{display: none;} }
+
+/*
+.plop {
+  display: none;
+}
+@media (min-width:960px){
+  .plop {
+    display: inline;
+    color: blue;
+  }
+}
+@media (max-width:600){
+  .plop {
+    display: inline;
+    color: red;
+  }
+}*/
+
+.navbar .btn-navbar {
+ 	color: Black;
+ 	font-weight: bold;
+}
+
+.navbar .btn-navbar:hover, .navbar .btn-navbar:focus, .navbar .btn-navbar:active, .navbar .btn-navbar.active, .navbar .btn-navbar.disabled, .navbar .btn-navbar[disabled] {
+	color: black;
+	font-weight: bold;
+	//background-color: #e6e6e6;
+}
+
+.nav-tabs > li, .nav-pills > li {
+    float:none;
+    display:inline-block;
+    *display: inline;     /* for IE7*/
+    *zoom:1;              /* for IE7*/
+
+}
+
+.nav-tabs {
+    text-align:center;
+}
+
+//.nav-tabs > li> a, .nav-tabs > li > a:hover, .nav-tabs > li > a:focus {
+//  background-color: blue;
+//}
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover, .nav-tabs > .active > a:focus {
+  background-color: orange;
+}
+
+@import "bootstrap-responsive";
