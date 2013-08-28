@@ -1,8 +1,8 @@
 # encoding: UTF-8
 module ApplicationHelper
 
-  def navigation_tag(current_path, name, icon="", nb_icon=1)
-  content_tag(:li, link_to((("<i class=\""+icon+"\"></i>")*nb_icon).html_safe+ " "+name, current_path), 
+  def navigation_tag(current_path, name, icon="", nb_icon=1, prefix='')
+  content_tag(:li, link_to((prefix + (("<i class=\""+icon+"\"></i>")*nb_icon)+ " "+name).html_safe, current_path), 
     class: ((current_page?(current_path) || (current_page?('/') && current_path == '/hotel')) ? "active" : ''))
   end
   
