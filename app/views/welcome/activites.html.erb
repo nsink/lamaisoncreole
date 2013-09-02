@@ -21,6 +21,7 @@
             <li data-target="#myCarousel" data-slide-to="3" class=""></li>
             <li data-target="#myCarousel" data-slide-to="4" class=""></li>
             <li data-target="#myCarousel" data-slide-to="5" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="6" class=""></li>
           </ol>
           </ol>
           <div class="carousel-inner">
@@ -56,6 +57,12 @@
             </div>
             <div class="item" style="max-width:600px">
               <%= image_tag('images_diapo/grande_anse.jpg') %>
+              <!-- <div class="carousel-caption">
+                <h4>La plage est là, pour vous!</h4>
+              </div> -->
+            </div>
+            <div class="item" style="max-width:600px">
+              <%= image_tag('images_diapo/jard_bot.jpg') %>
               <!-- <div class="carousel-caption">
                 <h4>La plage est là, pour vous!</h4>
               </div> -->
@@ -106,7 +113,7 @@
       <li><a                href="#j10">10</a></li>
     </ul>
     <div style="height:auto;overflow:auto">
-      <div class='well' style='height:650px'>
+      <div class='well' style='height:690px'>
         <div class="tab-content">
         <div class="tab-pane active" id="j1"><%= render 'visites/visite_1' %></div>
         <div class="tab-pane" id="j2"><%= render 'visites/visite_2' %></div>
@@ -118,7 +125,6 @@
         <div class="tab-pane" id="j8"><%= render 'visites/visite_8' %></div>
         <div class="tab-pane" id="j9"><%= render 'visites/visite_9' %></div>
         <div class="tab-pane" id="j10"><%= render 'visites/visite_10' %></div>
-        </div>
       </div>
     </div>
   </div>
