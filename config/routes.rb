@@ -4,7 +4,7 @@ Rvionwebsite::Application.routes.draw do
 
   match '/restaurant' => 'welcome#restaurant', as: :restaurant
   match '/hotel'      => 'welcome#hotel',      as: :hotel
-  match '/reserver'   => 'welcome#reserver',   as: :reserver
+  # match '/reserver'   => 'welcome#reserver',   as: :reserver
   match '/seminaires' => 'welcome#seminaires', as: :seminaires
   match '/activites'  => 'welcome#activites',  as: :activites
 

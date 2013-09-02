@@ -1,6 +1,6 @@
 class WelcomeController < ApplicationController
-  def reserver
-  end
+  # def reserver
+  # end
   
   def accueil
   end
