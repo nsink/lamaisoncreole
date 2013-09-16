@@ -17,12 +17,13 @@ gem 'will_paginate' 			# pagination gem
 
 gem 'jquery-rails'  			# jquery for rails
 gem 'simple_form'   			# for convenient forms 
+gem 'validates_email_format_of'
 
 # Gems used only for assets.
 group :assets do
-  gem 'sass-rails',     '~> 3.2.5' # no need to care about those 
-  gem 'coffee-rails',   '~> 3.2.2' # no need to care about those
-  gem 'uglifier',       '>= 1.0.3' # no need to care about those
+  gem 'sass-rails',     '~> 3.2.5'
+  gem 'coffee-rails',   '~> 3.2.2'
+  gem 'uglifier',       '>= 1.0.3'
   gem 'bootstrap-sass'
 end
 

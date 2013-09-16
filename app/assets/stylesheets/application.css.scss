@@ -8,7 +8,6 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
- *= require_self
  *= require_tree .
  */
 
@@ -30,20 +29,216 @@
     height: 100%;
     margin: 0 auto -70px;
 }
-#push,
-#footer {
+#push {
     height: 70px;
 }
-#footer {
-  background-color: #f5f5f5;
-  //A5BFDD
-}
 /* Lastly, apply responsive CSS fixes as necessary */
-@media (max-width: 767px) {
+
+
+
+/*
+CSS by Robin GUINARD
+06/09/2013
+****************************/
+
+body {
+  background: image-url('images_hotel/backg.jpg') center no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 0;
+  /*padding-bottom: 50px;*/
+}
+
+.well {
+  padding: 14px;
+  border: 0;
+  border-radius: 0;
+  border-top: 1px solid #fef6b6;
+  border-bottom: 2px solid #e9e06a;
+  background: rgba(255,255,255,0.5);
+  box-shadow: 0 5px 3px rgba(0,0,0,0.2);
+}
+
+.well2 {
+  padding-top: 14px;
+  /*border: 0;*/
+  /*border-radius: 0;*/
+  /*border-top: 1px solid #fef6b6;*/
+  border-top: 2px solid #e9e06a;
+  background: rgba(255,255,255,0.1);
+  /*box-shadow: 0 5px 3px rgba(0,0,0,0.2);*/
+}
+
+.h4l {
+  text-align:center;
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #292d30;
+}
+
+
+h3  {
+  color: #13a1c5;
+  text-shadow: 2px 2px 1px rgba(0,0,0,0.15);
+}
+h2 {
+  color: #0a7894;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 1);
+}
+
+.navbar-fixed-top {
+  border-bottom: 3px solid #fdef3f;
+}
+
+.navbar .nav > .active > a, .btn_or, .fond_or, .navbar .brand:hover, .navbar .nav > .active > a:hover, .navbar .nav > li > a:hover, .navbar .nav > .active > a:focus, .nav-tabs > .active > a, .nav-tabs > .active > a:hover, .nav-tabs > .active > a:focus {
+  background: linear-gradient(#fff7b8,#e9e06a);
+  background: -webkit-linear-gradient(#fff7b8,#e9e06a);
+  background: -moz-linear-gradient(#fff7b8,#e9e06a);
+  background: -ms-linear-gradient(#fff7b8,#e9e06a);
+  background: -o-linear-gradient(#fff7b8,#e9e06a);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fff7b8', EndColorStr='#e9e06a');
+  border-right: 1px solid #d0d8df;
+  border-left: 1px solid #d0d8df;
+}
+.navbar-inner {
+  border: 1px solid #d9cb14;
+}
+
+.navbar .nav > li > a {
+  margin: 0 1px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 20px 11px 18px 11px;
+}
+.navbar .nav > .active > a, .navbar .nav > li > a:hover {
+  margin: 0;
+}
+
+.navbar-fixed-bottom, .navbar-fixed-top {
+  position: static;
+}
+.navbar-fixed-top {
+  margin-bottom: 25px;
+}
+
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover {
+  border-bottom-color: #d0d8df; 
+}
+.row {
+  color: #000;
+}
+
+.carousel-inner > .item {
+  max-height: 265px;
+}
+
+
+#header h1 {
+  padding: 15px 20px;
+  color: #0a7894;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+.img-circle {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.aff_cart {
+  margin-bottom: 30px;
+}
+
+#footer a, #footer a:hover {
+  /*color: #0a7894;*/
+  color: rgb(3, 86, 151);
+}
+
+
+.fond_or {
+  border: none;
+}
+
+.btn_or {
+  padding: 12px 16px 12px 12px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 10px;
+  color: #3b4046;
+  border: 1px solid #d0d8df;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn_or:hover, .fond_or:hover {
+  box-shadow: inset -3px 5px 8px rgba(255,255,255,0.5);
+}
+
+.btn_or:active, .fond_or:active {
+  box-shadow: inset 0 3px 3px rgba(0,0,0,0.2);
+}
+
+
+h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #292d30;
+}
+h5 {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+#header {
+  background: rgba(255,255,255,0.6);
+}
+
+#footer {
+  /*position:fixed;*/
+    bottom:0;
+  /*background-color: #f5f5f5;*/
+  background-color: rgba(255, 255, 255, 0.64);
+  /*position: fixed;*/
+  padding-bottom: 9px;
+  bottom: 0;
+}
+#footer .navbar-inner {
+  background: none;
+}
+
+.biglink {
+  font-size: 20px;
+}
+
+
+.btn_phone {
+  display: block;
+  width: 65px;
+  text-align: center;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+@media  (max-width: 960px) {
   #footer {
-    margin-left: -20px;
-    margin-right: -20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    position: static;
+  }
+}
+@media (max-width: 767px) {
+  .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+    margin: 0;
+  }
+  body {
+    padding: 0;
   }
 }

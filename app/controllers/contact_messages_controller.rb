@@ -46,6 +46,11 @@ class ContactMessagesController < ApplicationController
 
     respond_to do |format|
       if @contact_message.save
+        begin
+          UserMailer.contact_email(@contact_message).deliver
+        rescue Exception => e
+          UserMailer.safe_contact_email(@contact_message).deliver
+        end
         format.html { redirect_to @contact_message, notice: 'Merci !' }
         format.json { render json: @contact_message, status: :created, location: @contact_message }
       else

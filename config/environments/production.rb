@@ -51,6 +51,7 @@ Rvionwebsite::Application.configure do
 
   # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
   # config.assets.precompile += %w( search.js )
+  # config.assets.precompile = %w( files )
 
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false
@@ -65,6 +66,19 @@ Rvionwebsite::Application.configure do
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
 
+  config.action_mailer.perform_deliveries = true 
+  config.action_mailer.raise_delivery_errors = true
+  ActionMailer::Base.delivery_method = :smtp
+  ActionMailer::Base.smtp_settings = {
+    :address => "smtp.lamaisoncreole.com",
+    :port => 25,
+    :domain => "lamaisoncreole.com",
+    :authentication       => "plain",
+    :enable_starttls_auto => true,
+    :openssl_verify_mode  => 'none',
+    :user_name => "support.lamaisoncreole",
+    :password => ENV['EMAIL_PWD']
+  }
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
