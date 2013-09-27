@@ -76,7 +76,7 @@ Rvionwebsite::Application.configure do
     :authentication       => "plain",
     :enable_starttls_auto => true,
     :openssl_verify_mode  => 'none',
-    :user_name => "support.lamaisoncreole",
+    :user_name => "info.lamaisoncreole",
     :password => ENV['EMAIL_PWD']
   }
   # Log the query plan for queries taking more than this (works
