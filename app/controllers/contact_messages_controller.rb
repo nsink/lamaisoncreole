@@ -15,7 +15,7 @@ class ContactMessagesController < ApplicationController
   # GET /contact_messages/1
   # GET /contact_messages/1.json
   def show
-    if ContactMessage.last && ContactMessage.last.id == params[:id]
+    if ContactMessage.last && ContactMessage.last.id == params[:id].to_i
       @contact_message = ContactMessage.find(params[:id])
 
       respond_to do |format|
