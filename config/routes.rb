@@ -7,7 +7,7 @@ Rvionwebsite::Application.routes.draw do
   # match '/reserver'   => 'welcome#reserver',   as: :reserver
   match '/seminaires' => 'welcome#seminaires', as: :seminaires
   match '/activites'  => 'welcome#activites',  as: :activites
-
+  match '/ping' => 'welcome#ping',  as: :ping
   # match '/accueil' => 'welcome#accueil', as: :accueil
   resources :contact_messages
 end

@@ -1,6 +1,9 @@
 class WelcomeController < ApplicationController
-  # def reserver
-  # end
+  def ping
+    respond_to do |format|
+      format.json { render json: {status: 'ok'} }
+    end
+  end
   
   def accueil
   end
