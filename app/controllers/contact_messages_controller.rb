@@ -15,11 +15,15 @@ class ContactMessagesController < ApplicationController
   # GET /contact_messages/1
   # GET /contact_messages/1.json
   def show
-    @contact_message = ContactMessage.find(params[:id])
+    if ContactMessage.last && ContactMessage.last.id == params[:id]
+      @contact_message = ContactMessage.find(params[:id])
 
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @contact_message }
+      respond_to do |format|
+        format.html # show.html.erb
+        format.json { render json: @contact_message }
+      end
+    else
+      redirect_to contact_messages_path
     end
   end
 
@@ -42,20 +46,24 @@ class ContactMessagesController < ApplicationController
   # POST /contact_messages
   # POST /contact_messages.json
   def create
-    @contact_message = ContactMessage.new(params[:contact_message])
+    if ContactMessage.where('created_at > ?', 10.minutes.ago).size > 10
+      redirect_to contact_messages_path, notice: "trop d'emails envoyés"
+    else
+      @contact_message = ContactMessage.new(params[:contact_message])
 
-    respond_to do |format|
-      if @contact_message.save
-        begin
-          UserMailer.contact_email(@contact_message).deliver
-        rescue Exception => e
-          UserMailer.safe_contact_email(@contact_message).deliver
+      respond_to do |format|
+        if @contact_message.save
+          begin
+            UserMailer.contact_email(@contact_message).deliver
+          rescue Exception => e
+            UserMailer.safe_contact_email(@contact_message).deliver
+          end
+          format.html { redirect_to @contact_message, notice: 'Merci !' }
+          format.json { render json: @contact_message, status: :created, location: @contact_message }
+        else
+          format.html { render action: "new" }
+          format.json { render json: @contact_message.errors, status: :unprocessable_entity }
         end
-        format.html { redirect_to @contact_message, notice: 'Merci !' }
-        format.json { render json: @contact_message, status: :created, location: @contact_message }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @contact_message.errors, status: :unprocessable_entity }
       end
     end
   end
