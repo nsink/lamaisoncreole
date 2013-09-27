@@ -47,7 +47,7 @@ class ContactMessagesController < ApplicationController
   # POST /contact_messages.json
   def create
     if ContactMessage.where('created_at > ?', 10.minutes.ago).size > 10
-      redirect_to contact_messages_path, notice: "trop d'emails envoyés"
+      redirect_to contact_messages_path, notice: "trop d'emails envoyes"
     else
       @contact_message = ContactMessage.new(params[:contact_message])
 
