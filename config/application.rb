@@ -61,14 +61,14 @@ module Rvionwebsite
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
-    config.after_initialize do
-      ::ALARM_CALL_SCRIPT_DOMMAIN = ENV['ALARM_CALL_SCRIPT_DOMMAIN']
-      ::ALARM_CALLBACK_DOMMAIN    = ENV['ALARM_CALLBACK_DOMMAIN']   
-      ::TWILIO_PHONE_NUMBER_SMS   = ENV['TWILIO_PHONE_NUMBER_SMS']  
-      ::TWILIO_PHONE_NUMBER_CALL  = ENV['TWILIO_PHONE_NUMBER_CALL'] 
-      ::TWILIO_ACCOUNT            = ENV['TWILIO_ACCOUNT']           
-      ::TWILIO_TOKEN              = ENV['TWILIO_TOKEN']             
-    end
+    #config.after_initialize do
+    #  ::ALARM_CALL_SCRIPT_DOMMAIN = ENV['ALARM_CALL_SCRIPT_DOMMAIN']
+    #  ::ALARM_CALLBACK_DOMMAIN    = ENV['ALARM_CALLBACK_DOMMAIN']   
+    #  ::TWILIO_PHONE_NUMBER_SMS   = ENV['TWILIO_PHONE_NUMBER_SMS']  
+    #  ::TWILIO_PHONE_NUMBER_CALL  = ENV['TWILIO_PHONE_NUMBER_CALL'] 
+    #  ::TWILIO_ACCOUNT            = ENV['TWILIO_ACCOUNT']           
+    #  ::TWILIO_TOKEN              = ENV['TWILIO_TOKEN']             
+    #end
 
   end
 end
