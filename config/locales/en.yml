@@ -2,4 +2,5 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello"
+  resto1: "Des plats raffinés et traditionnels, mariant les saveurs du terroir aux senteurs des îles."
+  contact_par: "To contact us, please, use this <b>form</b> below, or give us a phone call <b>(number at the bottom of the page)</b>. We will be happy to answer all your questions."
