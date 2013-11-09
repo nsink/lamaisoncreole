@@ -1,24 +1,89 @@
 == Site de l'hote lamaisoncreole
 
-* code par Rémi Vion et Leila
-* contenu par Rémi Vion et Leila
 
-== Getting Started
+Vous pouvez trouver le code des des pages du site dans le dossier app/views
+  
+  structure du site (header, footer, menus, etc):
+    app/views/layouts/application.html.erb
 
-0. Installez ruby (via RVM)
-1. Télécharger le code sur votre pc ou mac et mettez tout dans un dossier 'lamaisoncreole'
-2. Ouvrez une console et allez dans le dossier <tt>lamaisoncreole</tt> puis lancez le site web tapant: rails s dans la console.
-       <tt>cd lamaisoncreole; rails server</tt> (run with --help for options)
+  page de contact: 
+    app/views/contact_messages/new/_form
 
-3. Tapez dans votre navigateur internet http://localhost:3000/ et vous verrez le site
+  Jour de visite:
+    app/views/visites/_visite1.html.erb
+    app/views/visites/_visite2.html.erb
+    ...
 
-Si vous souhaitez faire de vraies modifications sur le site, vous devez connaitre un peu Ruby:
+  autres pages principales:
+    app/views/welcome/_hotel.html.erb
+    app/views/welcome/_reserver.html.erb
+    ....
+
+
+===================================================================================================================
+
+Afin de gérer plusieurs langages, le contenu des textes est progressivement déplacé 
+depuis les pages-elles mêmes vers les fichier de langues que vous pouvez trouver ici:
+  config/locales/fr.yml
+  config/locales/en.yml
+
+exemple: 
+  dans la page:
+    [...]
+    notre restaurant est cool
+    [...]
+  dans le fichier de langue fr.yml:
+    -
+  dans le fichier de langue en.yml:
+    -
+
+
+devient
+  dans la page:
+    [...]
+    <%= I18n.t('phrase_resto') %>
+    [...]
+  dans le fichier de langue fr.yml:
+    phrase_resto: "notre restaurant est cool"
+  dans le fichier de langue en.yml:
+    phrase_resto: "our restaurant is cool"
+
+
+===================================================================================================================
+
+== Pour un futur développeur:
+
+ * besoin de connaitre les bases du web (html/css/ un peu javascript) -> tout dévellopeur web connait ça.
+ * besoin de savoir un minimum programmer pour apprendre les bases nécessaires pour modifier du code ruby dans une application ruby on rails
+ * besoin de parler anglais (pour programmer, de manière générale, c'est assez nécessaire)
+ * savoir utiliser le logiciel git, ou être capable d'apprendre à s'en servir (c'est pas très difficile!)
+
+ ===================================================================================================================
+
+== Configurer un environnement de développement:
+
+0. Installez ruby (via RVM: https://rvm.io/)
+1. Télécharger le code du site sur votre pc ou mac et mettez tout dans un dossier 'lamaisoncreole' 
+  via git: git clone https://github.com/lamaisoncreole/lamaisoncreole.git
+2. Ouvrez une console et allez dans le dossier lamaisoncreole puis lancez le site web via la commande: rails server
+    cd lamaisoncreole; 
+    rails server
+
+3. Tapez dans votre navigateur internet http://localhost:3000/ et vous verrez le site. C'est tout.
+
+4. Quand vos modifications sont faires, utilisez GIT et 'commitez' toutes vos modifications, puis poussez les vers le server.
+
+
+
+===================================================================================================================
+Pour apprendre les bases (et même plus) sur ruby et ruby on rails :
 
 * The Getting Started Guide: http://guides.rubyonrails.org/getting_started.html
 * Ruby on Rails Tutorial Book: http://www.railstutorial.org/
 
+===================================================================================================================
+Vous trouvez ci dessous une organisation du code
 == Organisation du code
-
 
   |-- app
   |   |-- assets

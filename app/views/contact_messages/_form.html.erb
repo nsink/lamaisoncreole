@@ -16,10 +16,11 @@
   <div class="form-inputs">
     <div class="row">
       <div class='span4'>
-        
-        <%= f.input :nom, label: 'Nom :', as: :string  %>
-        <%= f.input :email, label: 'Email :', as: :string  %>
-        <%= f.input :telephone, label: 'Téléphone :', as: :string %>
+        <div class='well'>
+          <%= f.input :nom, label: 'Nom :', as: :string  %>
+          <%= f.input :email, label: 'Email :', as: :string  %>
+          <%= f.input :telephone, label: 'Téléphone :', as: :string %>
+        </div>
       </div>
       <div class='span8'>
         <%= f.input :message, label: 'Votre message:',:input_html => { 'style' => "width:100%", "rows" => 10 } %>
