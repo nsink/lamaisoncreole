@@ -109,7 +109,11 @@
   <div class='span6'>
     <div class="well">
       <div align='center'>
-        <h3 >8 jours de visites !</h3>(cliquez sur les images pour les agrandir)
+        <% if I18n.locale == :en %>
+          <h3 >8-day tour !</h3>(click on the images to enlarge)
+        <% else %>
+          <h3 >8 jours de visites !</h3>(cliquez sur les images pour les agrandir)
+        <% end -%>
       </div>
       <ul class="nav nav-tabs" id="myTab" align='center'>
         <li class="active"><a href="#j1" >1</a></li>
