@@ -1,14 +1,14 @@
 <h2 align='center'>
-  Activités, Détente, Visites
+  <%= t 'activity_page.title' %>
 </h2>
 <div class='row'>
   <div class='span6'>
     <div class="well">
     <p>
-      <h3 align='center'>Sous le soleil de Guadeloupe !</h3>
+      <h3 align='center'><%= t 'activity_page.subtitle1' %></h3>
     </p>
     <p>
-      <h4>Se promener, bronzer et se baigner :</h4>
+      <h4><%= t 'activity_page.subsubtitle1' %></h4>
       <div style="margin:auto;max-width:600px">
         <div id="myCarousel" class="carousel slide" >
           <ol class="carousel-indicators">
@@ -37,12 +37,14 @@
     </div>
     <p>
       <div class='well'>
-        <h4>Activités au sein de l'hotel :</h4>
+        <h4><%= t 'activity_page.subsubtitle2' %></h4>
         <br>
         <ul>
-          <li>Aquagym dans la piscine du 1er octobre au 30 juin.<br>Gratuit pour les clients de l'hotel.</li>
-          <!-- <li>Carte accès plage "Base Antilles Jet" Transats à disposition</li> -->
-          <li>Navette plage « Pointe de la Verdure » (sur demande - le matin )</li>
+          <li>
+            <%= t 'activity_page.bullet111' %><br>
+            <%= t 'activity_page.bullet112' %>
+          </li>
+          <li><%= t 'activity_page.bullet121' %></li>
         </ul>
       </div>
     </p>
@@ -64,7 +66,7 @@
     </p>
     <p>
       <div class='well'>
-        <h4>Se déplacer en guadeloupe :</h4>
+        <h4>Se déplacer en Guadeloupe :</h4>
         <br>
         <ul>
           <li>Location de voitures avec <a class='btn btn-mini' href="http://location-voiture-guadeloupe.jumbocar.com/location-voiture-guadeloupe/" target="_blank">Jumbo Car</a>, code promo: <b>mcreol</b></li>
@@ -94,14 +96,25 @@
       <div style="height:auto;overflow:auto">
         <div> <!-- style='height:645px'> -->
           <div class="tab-content">
-            <div class="tab-pane active" id="j1"><%= render 'visites/visite_1' %></div>
-            <div class="tab-pane"        id="j2"><%= render 'visites/visite_2' %></div>
-            <div class="tab-pane"        id="j3"><%= render 'visites/visite_3' %></div>
-            <div class="tab-pane"        id="j4"><%= render 'visites/visite_4' %></div>
-            <div class="tab-pane"        id="j5"><%= render 'visites/visite_5' %></div>
-            <div class="tab-pane"        id="j6"><%= render 'visites/visite_6' %></div>
-            <div class="tab-pane"        id="j7"><%= render 'visites/visite_7' %></div>
-            <div class="tab-pane"        id="j8"><%= render 'visites/visite_8' %></div>
+            <% if I18n.locale == :en %>
+              <div class="tab-pane active" id="j1"><%= render 'visites/visite_1_en' %></div>
+              <div class="tab-pane"        id="j2"><%= render 'visites/visite_2_en' %></div>
+              <div class="tab-pane"        id="j3"><%= render 'visites/visite_3_en' %></div>
+              <div class="tab-pane"        id="j4"><%= render 'visites/visite_4_en' %></div>
+              <div class="tab-pane"        id="j5"><%= render 'visites/visite_5_en' %></div>
+              <div class="tab-pane"        id="j6"><%= render 'visites/visite_6_en' %></div>
+              <div class="tab-pane"        id="j7"><%= render 'visites/visite_7_en' %></div>
+              <div class="tab-pane"        id="j8"><%= render 'visites/visite_8_en' %></div>
+            <% else%>
+              <div class="tab-pane active" id="j1"><%= render 'visites/visite_1' %></div>
+              <div class="tab-pane"        id="j2"><%= render 'visites/visite_2' %></div>
+              <div class="tab-pane"        id="j3"><%= render 'visites/visite_3' %></div>
+              <div class="tab-pane"        id="j4"><%= render 'visites/visite_4' %></div>
+              <div class="tab-pane"        id="j5"><%= render 'visites/visite_5' %></div>
+              <div class="tab-pane"        id="j6"><%= render 'visites/visite_6' %></div>
+              <div class="tab-pane"        id="j7"><%= render 'visites/visite_7' %></div>
+              <div class="tab-pane"        id="j8"><%= render 'visites/visite_8' %></div>
+            <% end -%>
           </div>
         </div>
       </div>

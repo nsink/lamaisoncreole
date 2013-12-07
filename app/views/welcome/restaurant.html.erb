@@ -2,13 +2,13 @@
 <div class="aff_cart">
   <div class="well" align='center'>
     <%= image_tag('images_restau/tabledebacchus.gif', align: "center")%>
-    <h3 align='center'>La Maison Créole bénéficie d'une excellente restauration.</h3>
+    <h3 align='center'><%= t 'resto_page.title' %></h3>
     <h5 align='center'>
-      Notre équipe sera heureuse de vous accueillir dans un cadre convivial,<br>
-      vous aurez le choix entre une salle climatisée ou une terrasse bien ventilée avec un fond musical varié.
+      <%= t 'resto_page.subtitle1' %><br>
+      <%= t 'resto_page.subtitle2' %>
     </h5>
       <div align='center'>
-        <h3>prochainement:</h3>
+        <h3><%= t 'resto_page.soon' %></h3>
         <a href="/noel_2013.jpg" class='btn btn-info'>Menu de Noël!</a>
         <a href="/st_sylvestre_2013.jpg" class='btn btn-info'>Menu de la St Sylvestre!</a>
       </div>
@@ -17,41 +17,21 @@
   <br><br>
   <div class='row'>
     <div align='center' class='span4 visible-desktop'><%= light_image_tag('images_restau/magret_de_canard.jpg', class: "img-polaroid", width: '75%') %></div>
-    <div class='span4'>
-      <br><br>
-      <div class='h4l well'>
-        <br>
-        <%= I18n.t('resto1') %>
-        <br><br><br>
-      </div>
-    </div>
+    <div class='span4'><br><br><div class='h4l well'><br><%= I18n.t('resto_page.info1') %><br><br><br></div></div>
     <div align='center' class='span4'><%= light_image_tag('images_restau/diner_pour_deux.jpg', class: "img-polaroid", width: '75%') %></div>
   </div>
 
   <br><br>
   <div class='row'>
     <div align='center' class='span4 visible-desktop'><%= light_image_tag('images_restau/plat1.jpg', class: "img-polaroid", width: '75%') %></div>
-      <div class='span4'>
-        <br>
-        <div class='h4l well'>
-          <br><br><br>
-          Venez dîner à la Table de Bacchus, les menus sont divers et variés.
-          <br><br><br>
-        </div>
-      </div>
+    <div class='span4'><br><div class='h4l well'><br><br><br><%= I18n.t('resto_page.info2') %><br><br><br></div></div>
     <div align='center' class='span4'><%= light_image_tag('images_restau/plat3.jpg', class: "img-polaroid", width: '75%') %></div>
   </div>
 
   <br><br>
   <div class='row'>
     <div align='center' class='span4 visible-desktop'><%= light_image_tag('images_restau/img_restau_1.jpg', class: "img-polaroid", width: '75%') %></div>
-    <div class='span4'>
-      <div class='h4l well'>
-        <br>
-        Notre restaurant est à votre disposition pour tous vos évènements: mariage, baptême, anniversaire, repas d'affaires.
-        <br><br>A l'occasion des différentes fêtes de l'année: Pâques, Noël, Nouvel An, Saint-Valentin, fêtes des mères, etc.
-      </div>
-    </div>
+    <div class='span4'><div class='h4l well'><br><%= I18n.t('resto_page.info3') %><br><br><%= I18n.t('resto_page.info4') %></div></div>
     <div align='center' class='span4'><br><%= light_image_tag('images_restau/bateme.jpg', class: "img-polaroid", width: '75%') %></div>
   </div>
 
@@ -59,13 +39,7 @@
   <div class='row'>
     <div align='center' class='span4 visible-desktop'><%= light_image_tag('images_restau/cocktail1.jpg', class: "img-polaroid", width: '55%') %></div>
     <div class='span4'>
-      <br><br>
-      <div class='h4l well'>
-        <br><br><br>
-        Venez découvrir et siroter nos cocktails colorés, préparés par nos soins.
-        <br><br><br>
-      </div>
-      <br><br><br>
+      <br><br><div class='h4l well'><br><br><br><%= I18n.t('resto_page.info5') %><br><br><br></div><br><br><br>
       <div align='center'>
         <a target="blank" class='btn btn-large' href="http://www.latabledebacchus.com">Voir le site du restaurant</a>
       </div>
@@ -73,13 +47,4 @@
     <div align='center' class='span4'><%= light_image_tag('images_restau/cocktail4.jpg', class: "img-polaroid", width: '55%') %></div>
   </div>
 </div>
-<!-- 
-<div class='row'>
-  <div class='well'>
-    Les menus de La Table de Bacchus sont divers et colorés et appréciés par toute notre clientèle. Les demi-pensionnaires composent quotidiennement leur menu. <b>La demi pension peut se réserver pour tout ou partie du séjour
-    <b>La TABLE DE BACCHUS se situe directement à l'entrée de l'hôtel</b>
-    Vous avez le choix entre une salle climatisée ou une terrasse bien ventilée et verdoyante
-  </div>
-</div>
- -->
 <br><br><br>

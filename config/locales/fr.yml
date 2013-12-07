@@ -1,4 +1,79 @@
 
 fr:
-  resto1: "Des plats raffinés et traditionnels, mariant les saveurs du terroir aux senteurs des îles."
+  contact_us: "Contactez nous"
   contact_par: "Pour nous contacter, vous pouvez utiliser ce <b>formulaire</b> ou bien le <b>numéro de téléphone en bas de page</b>. Nous serons heureux de répondre à toute demande d'information complémentaire."
+  title:
+    la_maison_creole: "La Maison Créole"
+    restaurant: "Restaurant"
+    activités: "Activités"
+    séminaires: "Séminaires"
+    contact: "Contact"
+    reserver: "Réserver"
+  hotel_page: 
+    subtitle:
+      hotel: "Découverte, Détente, Douceur de vivre"
+      location: "Au cœur de la Guadeloupe"
+    tab_title:
+      hotel: "Hôtel"  
+      hebergement: "Hébergement"
+    description: "Avec son architecture et ses couleurs typiquement créoles, «La Maison Créole» est un charmant hôtel résidence de catégorie trois étoiles où se côtoient simplicité et convivialité. Il est composé d'un bâtiment unique de 56 chambres donnant sur le jardin tropical ou sur la piscine"
+    location: "Situé à l'entrée du Gosier et proche de tous commerces, l'hôtel est le point de départ idéal pour partir à la découverte de l'île papillon. A proximité, vous trouverez des commerces, des bars de nuit et le casino. L'hôtel se trouve à 20 mn de l'aéroport international Guadeloupe Pôle Caraïbes, à 10 mn du centre ville de Pointe-à-Pitre et à 800 m des plages."
+  resto_page:
+    soon: "Prochainement:"
+    title: "La Maison Créole bénéficie d'une excellente restauration."
+    subtitle1: "Notre équipe sera heureuse de vous accueillir dans un cadre convivial,"
+    subtitle2: "Vous aurez le choix entre une salle climatisée ou une terrasse bien ventilée avec un fond musical varié"
+    info1: "Des plats raffinés et traditionnels, mariant les saveurs du terroir aux senteurs des îles."
+    info2: "Venez dîner à la Table de Bacchus, les menus sont divers et variés."
+    info3: "Notre restaurant est à votre disposition pour tous vos évènements: mariage, baptême, anniversaire, repas d'affaires. "
+    info4: "A l'occasion des différentes fêtes de l'année: Pâques, Noël, Nouvel An, Saint-Valentin, fêtes des mères, etc."
+    info5: "Venez découvrir et siroter nos cocktails colorés, préparés par nos soins."
+  activity_page:
+    title: "Activités, Détente, Visites"
+    subtitle1: "Sous le soleil de Guadeloupe !"
+    subsubtitle1: "Se promener, bronzer et se baigner :"
+    subsubtitle2: "Activités au sein de l'hotel :"
+    bullet111: "Aquagym dans la piscine du 1er octobre au 30 juin."
+    bullet112: "Gratuit pour les clients de l'hotel."
+    bullet121: "Navette plage « Pointe de la Verdure » (sur demande - le matin )"
+    subsubtitle3: "Activités autour de l'hôtel :"
+
+
+en:
+  contact_title: "Contact us"
+  contact_par: "To contact us, you can use this form, either the phone number at the bottom of this page. We shall be happy to answer any request of further information"
+  title:
+    la_maison_creole: "La Maison Creole"
+    restaurant: "Restaurant"
+    activités: "What to do"
+    séminaires: "Work meetings"
+    contact: "Contact us"
+    reserver: "Book a room"
+  hotel_page:
+    subtitle:
+      hotel: "Discover, relax and visit"
+      location: "In the heart of Guadeloupe"
+    tab_title:
+      hotel: "Hotel"
+      hebergement: "Acommodation"
+    description: "With its architecture and its typically creole colors, «la Maison Creole» is a charming 3-star hotel residence where simplicity and conviviality are mixed. It consists of a unique building of 56 rooms   either with a view on the tropical garden or on the pool."
+    location: "Located in the entrance of the city of Gosier and close to many stores, the hotel is the ideal starting point to go off to explore the butterfly island. Nearby, you will find stores, night bars and the Casino. The hotel is 20 minutes away from the international airport Guadeloupe Pole Caraibes, 10 minutes away from the city of Pointe-à-Pitre and nearest beaches are at 800 meters."
+  resto_page:
+    soon: "Soon:"
+    title: "The House Creole benefits from an excellent catering."
+    subtitle1: "Our team will be happy to welcome you in a friendly space,"
+    subtitle2: "you will have the choice between an air-conditioned room or a well-ventilated terrace, with a  varied background music."
+    info1: "Refined and traditional dishes, melting the flavors of the terroir to the scents of the islands."
+    info2: "Come to have dinner at « la Table de Bacchus », the menus are diverse and varied."
+    info3: "Our restaurant is at your disposal for all your events: wedding, baptism, anniversary, business lunch."
+    info4: "On the occasion of the various Holiday celebrations of the year: Easter, Christmas, New Year, St Valentine's Day, Mother's Day…"
+    info5: "Come to discover and  sip our colorful cocktail drinks, prepared by our care."
+  activity_page:
+    title: "What to do, how to relax, what to see"
+    subtitle1: "Under the sun of Guadeloupe"
+    subsubtitle1: "Walking, sunbathing and bathing:"
+    subsubtitle2: "Activities Inside the hotel"
+    bullet111: "Gym  in the swimming pool from October 1st until June 30th."
+    bullet112: "Free for the customers of the hotel."
+    bullet121: "Shuttle beach « Pointe de la Verdure » (on request - in the morning)"
+    subsubtitle3: "Activities near the hotel:"
