@@ -1,55 +1,113 @@
-<h2 align='center'>
-    Vous organisez un séminaire ?
-</h2>
-<div style="text-align:center"><b>L'hôtel dispose d'un espace de réunion spécialement aménagé.</b><br>Cette salle peut accueillir jusqu'à 60 personnes <br><br></div>
-<div class='row'>
-  <div class='span4'>
-    <div class='well' style='height:140px'>
-      <div style="text-align:center">Pour travailler, vous disposerez de :</div><br>
-      <ul>
-        <li>WIFI</li>
-        <li>Un Paper-board</li>
-        <li>Un Tableau blanc</li>
-        <li>Un Vidéo-projecteur (sur demande)</li>
-      </ul>
+<% if I18n.locale == :en %>
+  <h2 align='center'>
+    Organizing a meeting?
+  </h2>
+  <div style="text-align:center"><b>Our hotel amenities include conference facilities.</b><br>The conférence room can accomodate 60 people max.<br><br></div>
+  <div class='row'>
+    <div class='span4'>
+      <div class='well' style='height:140px'>
+        <div style="text-align:center">To work, you could have :</div><br>
+        <ul>
+          <li>a wi-fi connection</li>
+          <li>a paper board</li>
+          <li>a white board</li>
+          <li>a LCD video projector</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='span4'>
+      <div class='well' style='height:140px'>
+        <div style="text-align:center">For your whole days of study or long working meetings, the hotel proposes</div><br>
+        <ul>
+          <li>a refrigerator</li>
+          <li>The 'Break in the morning' (on request)</li>
+          <li>The 'Break in the afternoon' (on request)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="span4">
+      <div class='well' style='height:140px'>
+        <div style="text-align:center">For more information, we invite you to contact our sales department</div> <br>
+        <ul>
+          <li>By phone: <b>0590 84  36 43</b> ou <b>0690 39 35 00</b><br></li>
+          <li>By mail: <b>commercial@lamaisoncreole.com</b></li>
+        </ul>
+      </div>
     </div>
   </div>
 
-  <div class='span4'>
-    <div class='well' style='height:140px'>
-      <div style="text-align:center">Pour vos journées complètes d'étude ou longues réunions de travail, l'hôtel propose :</div><br>
-      <ul>
-        <li>un réfrigérateur</li>
-        <li>La 'Pause matin' (sur demande)</li>
-        <li>La 'Pause après-midi' (sur demande)</li>
-      </ul>
+  <div class='row'>
+    <div class='span12'>
+    <!-- <div class="span12" style="text-align:center"> -->
+      <div class='well'>
+        <table width="100%">
+         <tr>
+          <td width="25%"><%= image_tag('images_hotel/theatre.png', :width => '90%', class: "img-polaroid") %></td>
+          <td width="25%"><%= image_tag('images_hotel/u.png', :width => '90%', class: "img-polaroid") %></td>
+          <td width="25%"><%= image_tag('images_hotel/conference.png', :width => '90%', class: "img-polaroid") %></td>
+          <td width="25%"><%= image_tag('images_hotel/ecoliere.png', :width => '90%', class: "img-polaroid") %></td>
+         </tr>
+        </table> 
+      </div>
+    </div>
+    <!-- </div> -->
+  </div>
+<% else %>
+  <h2 align='center'>
+      Vous organisez un séminaire ?
+  </h2>
+  <div style="text-align:center"><b>L'hôtel dispose d'un espace de réunion spécialement aménagé.</b><br>Cette salle peut accueillir jusqu'à 60 personnes <br><br></div>
+  <div class='row'>
+    <div class='span4'>
+      <div class='well' style='height:140px'>
+        <div style="text-align:center">Pour travailler, vous disposerez de :</div><br>
+        <ul>
+          <li>WIFI</li>
+          <li>Un Paper-board</li>
+          <li>Un Tableau blanc</li>
+          <li>Un Vidéo-projecteur (sur demande)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='span4'>
+      <div class='well' style='height:140px'>
+        <div style="text-align:center">Pour vos journées complètes d'étude ou longues réunions de travail, l'hôtel propose :</div><br>
+        <ul>
+          <li>un réfrigérateur</li>
+          <li>La 'Pause matin' (sur demande)</li>
+          <li>La 'Pause après-midi' (sur demande)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="span4">
+      <div class='well' style='height:140px'>
+        <div style="text-align:center">Pour plus d'informations, nous vous invitons à contacter notre service commercial</div> <br>
+        <ul>
+          <li>Par téléphone <br>au <b>0590 84  36 43</b> ou <b>0690 39 35 00</b><br></li>
+          <li>Par mail à <b>commercial@lamaisoncreole.com</b></li>
+        </ul>
+      </div>
     </div>
   </div>
 
-  <div class="span4">
-    <div class='well' style='height:140px'>
-      <div style="text-align:center">Pour plus d'informations, nous vous invitons à contacter notre service commercial</div> <br>
-      <ul>
-        <li>Par téléphone <br>au <b>0590 84  36 43</b> ou <b>0690 39 35 00</b><br></li>
-        <li>Par mail à <b>commercial@lamaisoncreole.com</b></li>
-      </ul>
+  <div class='row'>
+    <div class='span12'>
+    <!-- <div class="span12" style="text-align:center"> -->
+      <div class='well'>
+        <table width="100%">
+         <tr>
+          <td width="25%"><%= image_tag('images_hotel/theatre.png', :width => '90%', class: "img-polaroid") %></td>
+          <td width="25%"><%= image_tag('images_hotel/u.png', :width => '90%', class: "img-polaroid") %></td>
+          <td width="25%"><%= image_tag('images_hotel/conference.png', :width => '90%', class: "img-polaroid") %></td>
+          <td width="25%"><%= image_tag('images_hotel/ecoliere.png', :width => '90%', class: "img-polaroid") %></td>
+         </tr>
+        </table> 
+      </div>
     </div>
+    <!-- </div> -->
   </div>
-</div>
-
-<div class='row'>
-  <div class='span12'>
-  <!-- <div class="span12" style="text-align:center"> -->
-    <div class='well'>
-      <table width="100%">
-       <tr>
-        <td width="25%"><%= image_tag('images_hotel/theatre.png', :width => '90%', class: "img-polaroid") %></td>
-        <td width="25%"><%= image_tag('images_hotel/u.png', :width => '90%', class: "img-polaroid") %></td>
-        <td width="25%"><%= image_tag('images_hotel/conference.png', :width => '90%', class: "img-polaroid") %></td>
-        <td width="25%"><%= image_tag('images_hotel/ecoliere.png', :width => '90%', class: "img-polaroid") %></td>
-       </tr>
-      </table> 
-    </div>
-  </div>
-  <!-- </div> -->
-</div>
+<% end -%>

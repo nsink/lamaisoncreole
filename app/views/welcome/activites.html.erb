@@ -48,34 +48,62 @@
         </ul>
       </div>
     </p>
-    <p>
-      <div class='well'>
-        <h4>Activités autour de l'hotel :</h4>
-        <br>
-        <ul>
-          <li>Plages du Gosier: la Datcha, St-Felix</li>
-          <li>Ilet du Gosier</li>
-          <li>Aquarium du Gosier</li>
-          <li>Casino</li>
-          <li>Marina de Bas-du-Fort<br>(boites de nuit, restaurants, croisière détente King-Papyrus)</li>
-          <li>La Guadeloupe possède de nombreux chemins balisés appelés "TRACES" 
-            <a class='btn btn-mini' target='blank' href="https://dl.dropboxusercontent.com/s/fq00j7pkmv38h1d/TRACES%20EN%20GUADELOUPE.pdf">Voir notre sélection de traces</a>
-          </li>
-        </ul>
-      </div>
-    </p>
-    <p>
-      <div class='well'>
-        <h4>Se déplacer en Guadeloupe :</h4>
-        <br>
-        <ul>
-          <li>Location de voitures avec <a class='btn btn-mini' href="http://location-voiture-guadeloupe.jumbocar.com/location-voiture-guadeloupe/" target="_blank">Jumbo Car</a>, code promo: <b>mcreol</b></li>
-          <li>Location de voitures avec <a class='btn btn-mini' href="http://locationvoiture971.fr" target="_blank">Express Location</a>
-            <span class='float:right'><a href="http://locationvoiture971.fr" target="_blank"> <%= image_tag('express.png', :width => '20%') %></a></span>
-          </li>
-        </ul>
-      </div>
-    </p> 
+    <% if I18n.locale == :en %>
+      <p>
+        <div class='well'>
+          <h4>Activities near the hotel :</h4>
+          <br>
+          <ul>
+            <li>Beaches of Gosier : Datcha, St-Felix</li>
+            <li>Ilet du Gosier  (little Island in the bay of Gosier)</li>
+            <li>Gosier aquarium</li>
+            <li>Casino</li>
+            <li>Marina de Bas-du-Fort (nightclubs, restaurants, King-Papyrus one-day cruises)</li>
+          </ul>
+        </div>
+      </p>
+      <p>
+        <div class='well'>
+          <h4>Guadeloupe by car :</h4>
+          <br>
+          <ul>
+            <li>Car rental with <a class='btn btn-mini' href="http://location-voiture-guadeloupe.jumbocar.com/location-voiture-guadeloupe/" target="_blank">Jumbo Car</a>, Promo code: <b>mcreol</b></li>
+            <li>Car rental with <a class='btn btn-mini' href="http://locationvoiture971.fr" target="_blank">Express Location</a>
+              <span class='float:right'><a href="http://locationvoiture971.fr" target="_blank"> <%= image_tag('express.png', :width => '20%') %></a></span>
+            </li>
+          </ul>
+        </div>
+      </p> 
+    <% else %>
+          <p>
+        <div class='well'>
+          <h4>Activités autour de l'hotel :</h4>
+          <br>
+          <ul>
+            <li>Plages du Gosier: la Datcha, St-Felix</li>
+            <li>Ilet du Gosier</li>
+            <li>Aquarium du Gosier</li>
+            <li>Casino</li>
+            <li>Marina de Bas-du-Fort<br>(boites de nuit, restaurants, croisière détente King-Papyrus)</li>
+            <li>La Guadeloupe possède de nombreux chemins balisés appelés "TRACES" 
+              <a class='btn btn-mini' target='blank' href="https://dl.dropboxusercontent.com/s/fq00j7pkmv38h1d/TRACES%20EN%20GUADELOUPE.pdf">Voir notre sélection de traces</a>
+            </li>
+          </ul>
+        </div>
+      </p>
+      <p>
+        <div class='well'>
+          <h4>Se déplacer en Guadeloupe :</h4>
+          <br>
+          <ul>
+            <li>Location de voitures avec <a class='btn btn-mini' href="http://location-voiture-guadeloupe.jumbocar.com/location-voiture-guadeloupe/" target="_blank">Jumbo Car</a>, code promo: <b>mcreol</b></li>
+            <li>Location de voitures avec <a class='btn btn-mini' href="http://locationvoiture971.fr" target="_blank">Express Location</a>
+              <span class='float:right'><a href="http://locationvoiture971.fr" target="_blank"> <%= image_tag('express.png', :width => '20%') %></a></span>
+            </li>
+          </ul>
+        </div>
+      </p>
+    <% end -%>
   </div>
 
   <div class='span6'>
