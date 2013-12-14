@@ -9,7 +9,8 @@ fr:
     séminaires: "Séminaires"
     contact: "Contact"
     reserver: "Réserver"
-  hotel_page: 
+  hotel_page:
+    accomodation: "L'hôtel est composé de <b>58 studios pour 1 à 5 personnes</b>,équipés de kitchenettes avec réfrigérateur, TV, téléphone direct et climatisation individuelle.Notre réception est ouverte 24h/24, le personnel chaleureux et attentionné sera heureux de vous accueillir.  "
     subtitle:
       hotel: "Découverte, Détente, Douceur de vivre"
       location: "Au cœur de la Guadeloupe"
@@ -50,12 +51,13 @@ en:
     contact: "Contact us"
     reserver: "Book a room"
   hotel_page:
+    accomodation: "The hotel consists of <b>58 studios for 1-5 persons</b>, fully equipped kitchenettes with refrigerator, TV, telephone and air conditioning. Our reception is open 24h/24, the friendly and attentive staff will welcome you."
     subtitle:
       hotel: "Discover, relax and visit"
       location: "In the heart of Guadeloupe"
     tab_title:
       hotel: "Hotel"
-      hebergement: "Acommodation"
+      hebergement: "Accomodation"
     description: "With its architecture and its typically creole colors, «la Maison Creole» is a charming 3-star hotel residence where simplicity and conviviality are mixed. It consists of a unique building of 56 rooms   either with a view on the tropical garden or on the pool."
     location: "Located in the entrance of the city of Gosier and close to many stores, the hotel is the ideal starting point to go off to explore the butterfly island. Nearby, you will find stores, night bars and the Casino. The hotel is 20 minutes away from the international airport Guadeloupe Pole Caraibes, 10 minutes away from the city of Pointe-à-Pitre and nearest beaches are at 800 meters."
   resto_page:

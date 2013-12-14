@@ -18,6 +18,7 @@ gem 'will_paginate' 			# pagination gem
 gem 'jquery-rails'  			# jquery for rails
 gem 'simple_form'   			# for convenient forms 
 gem 'validates_email_format_of'
+gem 'turbolinks'
 
 # Gems used only for assets.
 group :assets do
@@ -34,23 +35,12 @@ end
 
 group :development, :test do
   gem 'rspec-rails' # tests lib
-  #gem 'factory_girl_rails' # easier model manipulation in tests
-  #gem 'timecop'     # to fix time in tests
-  #gem 'guard-rspec' # for preloading of rspec (related to tests)
-  #gem 'guard-spork' # for preloading of guard (related to tests)
-  #gem "spork-rails" # for preloading rails
-  #gem 'spork'       # for preloading things
   gem 'sqlite3'     # much easier to setup than postgresql
 end
 
 group :test do
-  #gem 'turn', '0.8.2', :require => false
   gem 'webmock'
   gem 'email_spec'
-  #gem 'timecop'
-  
-  #gem 'growl'       # prety printing of tests in console
-  #gem 'rb-fsevent'  # prety printing of tests in console
 end
 
 group :production do
