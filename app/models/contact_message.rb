@@ -8,8 +8,6 @@ class ContactMessage < ActiveRecord::Base
     end
     if email == nom
       errors.add(:email, 'Ne peut pas être similaire au nom')
-    elsif nom == telephone
-      errors.add(:nom, 'Ne peut pas être similaire au téléphonne')
     elsif email == telephone
       errors.add(:email, 'Ne peut pas être similaire au telephone')
     end
