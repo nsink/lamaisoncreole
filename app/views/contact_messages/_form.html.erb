@@ -20,6 +20,8 @@
           <%= f.input :nom, label: 'Nom :', as: :string  %>
           <%= f.input :email, label: 'Email :', as: :string  %>
           <%= f.input :telephone, label: 'Téléphone :', as: :string %>
+          <label for="contact_message[humans]" class="humans">Human check: Leave this field empty</label>
+          <input type="text" name="contact_message[humans]" id="humans" class="humans" />
         </div>
       </div>
       <div class='span8'>

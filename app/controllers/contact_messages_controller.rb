@@ -48,9 +48,14 @@ class ContactMessagesController < ApplicationController
   def create
     if ContactMessage.where('created_at > ?', 10.minutes.ago).size > 10
       redirect_to contact_messages_path, notice: "trop d'emails envoyes"
+    elsif !params[:contact_message][:humans].blank?
+      respond_to do |format|
+        format.json { render json: {status: "ok"}}
+      end
     else
-      @contact_message = ContactMessage.new(params[:contact_message])
-
+      form_params = params[:contact_message]
+      form_params.delete(:humans)
+      @contact_message = ContactMessage.new(form_params)
       respond_to do |format|
         if @contact_message.save
           begin
@@ -74,7 +79,9 @@ class ContactMessagesController < ApplicationController
     @contact_message = ContactMessage.find(params[:id])
 
     respond_to do |format|
-      if @contact_message.update_attributes(params[:contact_message])
+      form_params = params[:contact_message]
+      form_params.delete(:humans)
+      if @contact_message.update_attributes(form_params)
         format.html { redirect_to @contact_message, notice: 'Contact message was successfully updated.' }
         format.json { head :no_content }
       else
